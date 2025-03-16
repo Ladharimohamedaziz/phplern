@@ -89,6 +89,9 @@
     //     }
     // }
     $a = 10;
+    echo <<<"hello"
+    whoohoooooooooooooooooooooooo :)
+    hello;
     $b = @$a or die("Variable Not found");
     echo "test &b";
     echo '<br>';
@@ -100,7 +103,7 @@
     echo '<br>';
     echo '</pre>';
     ?>
-    
+
 </body>
 
 </body>
