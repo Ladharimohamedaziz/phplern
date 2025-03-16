@@ -95,6 +95,7 @@
     $f = file("test.txt");
     echo '<pre>';  //! T7ot array taèt  ba3dhou
     echo '<br>';
+    echo '<br>';
     print_r($f);
     echo '<br>';
     echo '</pre>';
