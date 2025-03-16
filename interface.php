@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <form method="post" action="">
         <input type="text" name="titre" placeholder="titre">
         <input type="text" name="auteur" placeholder="auteur">
@@ -73,27 +72,36 @@
         }
     }
     function Add() {}
-
-    function more(){
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $titre = $_POST["titre"] ?? "Unknown";
-        $auteur = $_POST["auteur"] ?? "Unknown";
-        $isbn = $_POST["isbn"] ?? "Unknown";
-        $livre = $_POST["livre"] ?? "Unknown";
+    function more()
+    {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $titre = $_POST["titre"] ?? "Unknown";
+            $auteur = $_POST["auteur"] ?? "Unknown";
+            $isbn = $_POST["isbn"] ?? "Unknown";
+            $livre = $_POST["livre"] ?? "Unknown";
+        }
+        $newbook = new book($titre, $auteur, $isbn, $livre);
+        $newbook->displayInfo();
     }
-    $newbook = new book($titre, $auteur, $isbn, $livre);
-    $newbook->displayInfo();
-    }
-
-function Addmore(){
-    for($i;i>5;$i++){
-        more();
-    }
-}
-
-
+    // function Addmore(){
+    //     for($i;i>5;$i++){
+    //         more();
+    //     }
+    // }
+    $a = 10;
+    $b = @$a or die("Variable Not found");
+    echo "test &b";
+    echo '<br>';
+    $f = file("test.txt");
+    echo '<pre>';  //! T7ot array taèt  ba3dhou
+    echo '<br>';
+    print_r($f);
+    echo '<br>';
+    echo '</pre>';
     ?>
+    
 </body>
+
 </body>
 
 </html>
