@@ -90,6 +90,7 @@
     // }
     $a = 10;
     echo <<<"hello"
+
     whoohoooooooooooooooooooooooo :)
     hello;
     $b = @$a or die("Variable Not found");
@@ -102,6 +103,17 @@
     print_r($f);
     echo '<br>';
     echo '</pre>';
+
+
+
+if(10>5){
+    echo"yess";
+}elseif(5<10){
+    echo "yes e";
+}else{
+    "finfin";
+}
+
     ?>
 
 </body>
